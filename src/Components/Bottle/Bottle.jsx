@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Bottle.css'
 const Bottle = ({bottle,handleCard}) => {
     return (
@@ -9,5 +10,8 @@ const Bottle = ({bottle,handleCard}) => {
         </div>
     );
 };
-
+Bottle.propTypes = {
+    bottle: PropTypes.array.isRequired,
+    handleCard: PropTypes.func,
+}
 export default Bottle;
